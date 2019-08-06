@@ -1,4 +1,4 @@
 #Exam of Django + React
 
-1.Creat Env /n
+1.Creat Env
 2.install all env with: pip install -r requirements.txt
