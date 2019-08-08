@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\lenovo\\.virtualenvs\\ExamDjangoMovies-nRYqtkLg\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\lenovo\\.virtualenvs\\ExamDjangoMovies-nRYqtkLg\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
