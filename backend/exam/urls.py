@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from frontend import urls
 urlpatterns = [
     path('', include('frontend.urls')),
     path('', include('movies.urls')),

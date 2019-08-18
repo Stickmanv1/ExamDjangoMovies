@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'movies.apps.MoviesConfig',
-    'frontend',
+    # '/frontend',
+    # 'ExamDjangoMovies.frontend',
+    # '/frontend',
+    '../../frontend',
+    # 'frontend.urls',
     # 'movies',
     'rest_framework'
 
