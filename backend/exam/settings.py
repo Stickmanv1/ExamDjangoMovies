@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,6 +28,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# edit add path src
+# SITE_PATH = os.path.abspath(os.path.dirname(__file__))
+# PROJECT_PATH = os.path.normpath(os.path.join(SITE_PATH, '..', '..'))
+# SRC_PATH = os.path.join(PROJECT_PATH, 'src')
+# if SRC_PATH not in sys.path:
+#     sys.path.insert(0, SRC_PATH)
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,13 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'movies.apps.MoviesConfig',
+    # 'django.backend.src.movies.apps.MoviesConfig',
+    # 'movies.apps.MoviesConfig',
     # '/frontend',
-    # 'ExamDjangoMovies.frontend',
     # '/frontend',
-    '../../frontend',
+    # '../../frontend',
     # 'frontend.urls',
-    # 'movies',
+    'movies',
     'rest_framework'
 
 ]
@@ -136,3 +141,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}

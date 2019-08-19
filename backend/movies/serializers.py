@@ -1,4 +1,5 @@
 from rest_framework import serializers
+# from movies.models import Movie
 from .models import Movie
 
 # movie serializer

@@ -1,8 +1,9 @@
 from rest_framework import routers
-from .api import MovieViewset
+from .api import MovieViewset  # , MovieViewDetail
 
 router = routers.DefaultRouter()
-router.register('api/movies', MovieViewset, 'movies')
+router.register('api', MovieViewset, 'movies')
+# router.register('<pk>', MovieViewDetail, 'movies')
 
 urlpatterns = router.urls
 # from django.urls import path
