@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import './bootstrap.css';
+import CustomLayout from './containers/Layout';
+import AddMovieList from './containers/FormAddMoviesView'
 
-function App() {
-  return (
-    <div className="App">
-      {/* <header className="App-header"> */}
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">ExamDjangoMovies</a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          </ul>
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <CustomLayout>
+        </CustomLayout>
+        <br></br>
+        <AddMovieList />
 
-        </div>
-      </nav>
-      {/* </header> */}
-    </div>
-  );
+      </div >
+    );
+  }
 }
 
 export default App;
+
+        // <header className="App-header">
+        //   <h1 className="App-Title"> Welcome to React</h1>
+        // </header>
+        // <p className="App-intro">
+        //   to get Started , edit <code>src/App.js</code> and save to reload.
+        // </p>
