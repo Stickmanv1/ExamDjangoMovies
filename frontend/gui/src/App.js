@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 import './bootstrap.css';
+import { BrowserRouter as Router } from 'react-router-dom'
+import BaseRouter from './routes'
 import CustomLayout from './containers/Layout';
-import AddMovieList from './containers/FormAddMoviesView'
+// import AddMovieLists from './components/FormAddMoviesView'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <CustomLayout>
-        </CustomLayout>
-        <br></br>
-        <AddMovieList />
+        <Router>
+          <CustomLayout>
+          </CustomLayout>
+          <br></br>
+          <BaseRouter />
+        </Router>
 
       </div >
     );
