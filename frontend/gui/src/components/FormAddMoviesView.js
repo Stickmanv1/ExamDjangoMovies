@@ -141,8 +141,7 @@ class AddMovieLists extends React.Component {
                             placeholder="Enter Price Ratee">
                         </input>
                     </div>
-                    <div className="form-group">
-                        {/* <label for="exampleFormControlInput1">Enter Price Rate</label> */}
+                    {/* <div className="form-group">
                         <input type="number"
                             className="form-control"
                             name="genre"
@@ -150,23 +149,23 @@ class AddMovieLists extends React.Component {
                             value={genre}
                             placeholder="Enter Genre">
                         </input>
-                    </div>
+                    </div> */}
 
                     <div className="form-group">
-                        {/* <label for="exampleFormControlSelect1"> select Genre</label>
+                        <label for="exampleFormControlSelect1"> select Genre</label>
                         <select
                             className="form-control"
                             name="genre"
                             onChange={this.onChange}
                             value={genre}
                         >
-                            
-                            <option >1.Action</option>
-                            <option >2.Comedy</option>
-                            <option >3.Drama</option>
-                            <option >4.Horror</option>
-                            <option >5.Romance</option>
-                        </select> */}
+
+                            <option value={1}>1.Action</option>
+                            <option value={2}>2.Comedy</option>
+                            <option value={3}>3.Drama</option>
+                            <option value={4}>4.Horror</option>
+                            <option value={5}>5.Romance</option>
+                        </select>
                         <br></br>
                         <div className="form-group">
                             <button type="submit" className="btn btn-primary">
